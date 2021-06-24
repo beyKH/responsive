@@ -116,10 +116,10 @@ img {
  }
 
 
-@media only screen  and (max-width: 800px){
+@media only screen  and (max-width: 600px){
 
   .nav-modal--active {
-    height: 50%;
+    height: 60%;
     animation-name: slide-down;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
