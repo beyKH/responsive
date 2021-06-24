@@ -5,11 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Project</title>
+  <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+  <!--load all styles -->
+
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- SITE-HEADER -->
+      <header class="site-header">
+        <div class="container site-header__container">
+          <a class="logo" href="index.html">
+            <img class="logo__img" src="https://picsum.photos/seed/picsum/150/60" alt="logo of company"
+              width="150" height="60">
+          </a>
 
+          <nav class="sitenav">
+            <button class="btn sitenav__toggler">
+              <i class="fas fa-bars"></i>
+            </button>
+            <ul class="sitenav__list">
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Home</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">About</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Contact</a>
+              </li>
+              <li class="sitenav__item">
+                <a class="sitenav__link" href="#">Services</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </header>
+
+
+    <!-- NAVBAR MODAL -->
+    <div class="nav-modal ">
+      <div class="nav-modal__top">
+        <button class="btn nav-modal__cancel-button">
+          <i class="fas fa-times"></i>
+        </button>
+         <nav class="nav-modal__box">
+           <ul class="nav-modal__list">
+             <li class="nav-modal__item">
+               <a class="nav-modal__link" href="#">Home</a>
+             </li>
+             <li class="nav-modal__item">
+               <a class="nav-modal__link" href="#">About</a>
+             </li>
+             <li class="nav-modal__item">
+               <a class="nav-modal__link" href="#">Contact</a>
+             </li>
+             <li class="nav-modal__item">
+               <a class="nav-modal__link" href="#">Services</a>
+             </li>
+           </ul>
+         </nav>
+
+      </div>
+
+    </div>
 
   <script src="js/main.js"></script>
 </body>

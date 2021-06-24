@@ -43,9 +43,159 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 900px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+.site-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.logo__img{
+  display: block;
+}
+
+.sitenav__list {
+  display: flex;
+    list-style: none;
+}
+
+.sitenav__item {
+  margin-right: 50px;
+}
+
+.sitenav__link {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+}
+
+.sitenav__toggler{
+  border: none;
+  display: none;
+  background-color: transparent;
+  font-size: 24px;
+}
+
+.btn{
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+.nav-modal__cancel-button{
+  display: none;
+}
+
+ .nav-modal {
+  position: fixed;
+  height: 0%;
+  padding: 20px;
+  width: 100%;
+  background-color: #333;
+  animation-name: slide-up;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+  transition: height 0.5s ease;
+
+
+ }
+
+
+@media only screen  and (max-width: 800px){
+
+  .nav-modal--active {
+    height: 50%;
+    animation-name: slide-down;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+  }
+
+   .nav-modal--active .nav-modal__cancel-button {
+     display: block;
+   }
+
+
+  .sitenav__toggler{
+    display: block;
+  }
+
+  .sitenav__list{
+    display: none;
+  }
+
+
+
+
+
+  .nav-modal__box {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-modal__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-modal__item {
+    margin-bottom: 5px;
+  }
+
+  .nav-modal__link {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .nav-modal--active {
+    display: block;
+  }
+
+
+
+
+
+
+
+}
+
+
+@keyframes slide-down {
+  from{
+    transform: translateY(-1200px);
+
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up{
+  from {
+    transform: translateY(0);
+
+  }
+
+  to {
+    transform: translateY(-1200px);
+  }
 }
